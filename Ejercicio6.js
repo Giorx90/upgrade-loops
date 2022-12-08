@@ -6,6 +6,20 @@ const toys = [
     {id: 40, name: 'El gato felix'}
     ]
 
+    let i = 0;
+    while(i < toys.length) {
+        const toy = toys[i]
+        if (toy.name.includes("gato") == true) {
+            toys.splice(i,1)
+        } else {
+            i++
+        }
+    }
+    
+    console.log(toys)
+
+
+/**
 for(toy of toys) {
     if (toy.name.includes("gato") == true) {
         toys.splice(toy,1);
@@ -13,5 +27,5 @@ for(toy of toys) {
         console.log(toy);
     }
 }
-
+**/
 
